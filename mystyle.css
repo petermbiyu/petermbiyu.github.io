@@ -165,7 +165,7 @@ h3::before {
 }
 
 /* responsiveness design */ 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 1080px) {
     .container {
         width: 100%;
         min-height: max-content;
@@ -173,8 +173,20 @@ h3::before {
         margin-top: 0px;
         margin-bottom: 0px;
     }
+    .card {
+        width: 200px;
+        flex: none;
+        height: 200px;
+        margin: auto;
+        background-color: rgb(0, 191, 255);
+        transform: rotate(-2deg);
+        box-shadow: 2px 4px 8px gray;
+        margin-bottom: 20px;
+        animation: shake 3s ease-in-out;
+    }
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 820px) {
     .section {
         width: 100%;
         margin-top: 10px;
@@ -197,7 +209,7 @@ h3::before {
         
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 580px) {
     .section1, .section2 {
         width: 100%;
     }
@@ -224,7 +236,7 @@ h3::before {
         margin-bottom: 10px;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
     .section2 .cards {
         display: flex;
         justify-content: center;

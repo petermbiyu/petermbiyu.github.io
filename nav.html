@@ -1,5 +1,6 @@
 
-<h1>Peter M. Muigai</h1>
+<h1 class="nav-test1">Peter M. Muigai</h1>
+<h1 class="nav-test2">Peter</h1>
 <ul class="list">
     <li><a href="/index.html">Home</a></li>
     <li><a href="/about.html">About</a></li>
@@ -36,6 +37,9 @@
     color: rgb(0, 0, 214);
     text-shadow: 2px 2px 5px rgb(255, 0, 0);
     line-height: 40px;
+}
+.nav .nav-test2 {
+    display: none;
 }
 .nav .list {
     display: flex;
@@ -77,8 +81,22 @@ li a {
 }
 
 /* responsive design */
+@media screen and (max-width: 700px) {
+    .nav .nav-test1 {
+    display: none;
+    }
+    .nav .nav-test2 {
+    display: block;
+    }
+}
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 570px){
+    .nav .nav-test1 {
+    display: block;
+    }
+    .nav .nav-test2 {
+    display: none;
+    }
     .nav .list {
         display: none;
     }
