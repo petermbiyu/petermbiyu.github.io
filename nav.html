@@ -1,12 +1,23 @@
 
-<h1>Peter Mbiyu Muigai</h1>
+<h1>Peter M. Muigai</h1>
 <ul class="list">
     <li><a href="/index.html">Home</a></li>
     <li><a href="/about.html">About</a></li>
-    <li><a href="/portfolio.html">Portfolio</a></li>
+    <li><a href="/Portfolio.html">Portfolio</a></li>
     <li><a href="/blogs.html">Blog</a></li>
     <li><a href="/contact.html">Contact</a></li>
 </ul>
+<div class="list2">
+    <select name="nav" id="nav">
+        <option value="Home" selected disabled hidden><i class="fa-solid fa-house"></i> Menu</option>
+        <option value="Home"><i class="fa-solid fa-house"></i> Home</option>
+        <option value="about">About</option>
+        <option value="Portfolio">Portfolio</option>
+        <option value="Blogs">Blogs</option>
+        <option value="Contact"><i class="fa-solid fa-phone"></i>Contact</option>
+
+    </select>
+</div>
 <style>
     /* Header part of the page */
 .nav {
@@ -60,5 +71,20 @@ li a {
     font-size: 16px;
     font-weight: 600;
     
+}
+.nav .list2 {
+    display: none;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 500px){
+    .nav .list {
+        display: none;
+    }
+    .nav .list2 {
+        display: block;
+    }
+
 }
 </style>
