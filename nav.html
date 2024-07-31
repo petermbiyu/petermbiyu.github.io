@@ -18,7 +18,6 @@
         <li><a href="/resume.html">Resume</a></li>
         <li><a href="/contact.html">Contact</a></li>
     </ul>
-
 </div>
 
 <style>
@@ -83,12 +82,14 @@
 }
 .nav .list2 {
     width: 30%;
-    display: flex;
+    max-width: 150px;
+    display: none;
+    flex-flow: column nowrap;
     position: absolute;
     right: 10px;
     top: 5px;
     z-index: 150;
-    background-color: rgba(255, 255, 255, 0.719);
+    background-color: rgba(245, 245, 245, 0.4);
  
 }
 .list2 .menu-btn {
@@ -99,10 +100,10 @@ input[type = "checkbox"] {
     display: none;
 }
 .menu-btn label {
-    font-size: 18px;
+    font-size: 25px;
     width: 100%;
     font-weight: 600;
-    text-align: right;
+    text-align: center;
     height: 50px;
     cursor: pointer;
     user-select: none;
@@ -131,6 +132,7 @@ input[type = "checkbox"] {
     line-height: 40px;
     background-color: #00a2d3;
     color: #fff;
+    border-radius: 3px;
     font-size: 17px;
     font-weight: 600;
     display: inline-block;
@@ -140,55 +142,6 @@ input[type = "checkbox"] {
     background-color: #007fdc;
 }
 
-/*.nav .list2 {
-    display: none;
-    top: 10px;
-    right: 10px;
-    width: 40%;
-    z-index: 150;
-    border-radius: 5px;
-    border: none;
-    background-color:rgba(255, 255, 255, 0.8);
-}
-
-.list2 .list-menu {
-    width: 100%;
-    height: inherit;
-    text-align: center;
-}
-.list-menu h3 {
-    font-size: 18px;
-    font-weight: 600;
-}
-.list-menu .menu-item {
-    height: 200px;
-}
-
-.menu-item .nav-list {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.nav-list .mylist {
-    width: 80%;
-    height: 40px;
-    background-color: #00a2d3;
-    border-radius: 5px;
-}
-.mylist a {
-    text-decoration: none;
-    height: 40px;
-    width: 100%;
-    line-height: 40px;
-    color: #fff;
-    padding-left: 20px;
-    font-size: 17px;
-    font-weight: 600;
-    display: inline-block;
-}
-    */
 
 /* responsive design */
 @media screen and (max-width: 700px) {
