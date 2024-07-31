@@ -37,25 +37,56 @@ input[type = "radio"] {
     text-align: center;
 }
 .resume-text {
-    width: 80%
+    width: 90%
 }
 .main-text {
     width: 100%;
-    max-width: 800px;
-    padding-left: 40px;
+    max-width: 1000px;
+    padding: 0px 40px;
+}
+.main-text {
+    margin-top: 10px;
+}
+.main-text h4 {
+    font-size: 25px;
+    height: 50px;
+    line-height: 50px;
+
 }
 .main-text p {
     font-size: 17px;
     text-align: justify;
+    padding-top: 10px;
 }
 .my-resume .resume-text .mytext {
     display: none;
 }
 
-#personal:checked ~ .my-resume .resume-text .personal,
-#professional:checked ~ .my-resume .resume-text .professional,
-#academics:checked ~ .my-resume .resume-text .academics,
-#interest:checked ~ .my-resume .resume-text .interest,
-#references:checked ~ .my-resume .resume-text .references {
+#personal:checked ~ .my-resume .resume-text .main-text .personal,
+#professional:checked ~ .my-resume .resume-text .main-text .professional,
+#academics:checked ~ .my-resume .resume-text .main-text .academics,
+#interest:checked ~ .my-resume .resume-text .main-text .interest,
+#references:checked ~ .my-resume .resume-text .main-text .references {
     display: block;
+}
+
+
+.resume-btn {
+    margin: 30px 0px 10px 0px;
+}
+.mybtn {
+    padding: 6px 10px;
+    background-color: #00a2d3;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+}
+.mybtn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.mybtn:hover {
+    background-color:#007fdc;
 }
