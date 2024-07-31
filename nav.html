@@ -1,6 +1,6 @@
 
 <h1 class="nav-test1">Peter M. Muigai</h1>
-<h1 class="nav-test2">Peter</h1>
+<h1 class="nav-test2">Peter M.</h1>
 <ul class="list">
     <li><a href="/index.html">Home</a></li>
     <li><a href="/about.html">About</a></li>
@@ -8,12 +8,19 @@
     <li><a href="/contact.html">Contact</a></li>
 </ul>
 <div class="list2">
-    <label for="menu"></label>
-    <form action="">
-        <input type="radio" name="Home" id="Home">
-    </form>
-    
+    <input type="checkbox" name="menu" id="menu">
+    <div class="menu-btn">
+        <label for="menu">Menu</label>
+    </div>
+    <ul class="mylist">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/resume.html">Resume</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+
 </div>
+
 <style>
     /* Header part of the page */
 .nav {
@@ -25,6 +32,7 @@
     justify-content: space-between;
     padding-bottom: 10px;
     border-bottom: 2px solid navy;
+    position: relative;
 }
 .nav h1 {
     font-size: 25px;
@@ -34,7 +42,9 @@
     line-height: 40px;
 }
 .nav .nav-test2 {
-    display: none;
+   display: none;
+   
+   
 }
 .nav .list {
     display: flex;
@@ -48,7 +58,7 @@
     cursor: pointer;
     
 }
-li::before {
+.list li::before {
     content: "";
     position: absolute;
     left: 10px;
@@ -58,11 +68,11 @@ li::before {
     border: 2px solid #d400ff;
     z-index: 90;
 }
-li:hover::before {
+.list li:hover::before {
     width: 35px;
 }
 
-li a {
+.list li a {
     display: block;
     padding: 5px 10px;
     color: blue;
@@ -72,8 +82,113 @@ li a {
     
 }
 .nav .list2 {
+    width: 30%;
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    z-index: 150;
+    background-color: rgba(255, 255, 255, 0.719);
+ 
+}
+.list2 .menu-btn {
+    width: 100%;
+    height: 50px;
+}
+input[type = "checkbox"] {
     display: none;
 }
+.menu-btn label {
+    font-size: 18px;
+    width: 100%;
+    font-weight: 600;
+    text-align: right;
+    height: 50px;
+    cursor: pointer;
+    user-select: none;
+    line-height: 50px;
+    display: inline-block;
+    color: rgb(0, 0, 214);
+    text-shadow: 2px 2px 5px rgb(255, 0, 0);
+}
+
+.mylist {
+    list-style: none;
+    margin: 0px 10px;
+    display: none;
+    transition: all 0.8s ease;
+}
+#menu:checked ~ .mylist {
+    display: block;
+}
+.mylist li {
+    height: 50px;
+}
+.mylist li a {
+    text-decoration: none;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    background-color: #00a2d3;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+}
+.mylist li a:hover {
+    background-color: #007fdc;
+}
+
+/*.nav .list2 {
+    display: none;
+    top: 10px;
+    right: 10px;
+    width: 40%;
+    z-index: 150;
+    border-radius: 5px;
+    border: none;
+    background-color:rgba(255, 255, 255, 0.8);
+}
+
+.list2 .list-menu {
+    width: 100%;
+    height: inherit;
+    text-align: center;
+}
+.list-menu h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.list-menu .menu-item {
+    height: 200px;
+}
+
+.menu-item .nav-list {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-list .mylist {
+    width: 80%;
+    height: 40px;
+    background-color: #00a2d3;
+    border-radius: 5px;
+}
+.mylist a {
+    text-decoration: none;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    color: #fff;
+    padding-left: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    display: inline-block;
+}
+    */
 
 /* responsive design */
 @media screen and (max-width: 700px) {
