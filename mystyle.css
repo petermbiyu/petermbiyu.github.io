@@ -96,6 +96,21 @@ h3::before {
     width: 100%;
     padding: 10px;
 }
+.content h4 {
+    font-size: 1em;
+    font-weight: 600;
+    color: #00c4ae;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 7s steps(28) infinite;
+    border-right: 4px solid #00c4ae;
+    
+}
+@keyframes typing {
+    0% {width: 0ch;}
+    50% {width: 28ch;}
+    100% {width: 0ch;}
+}
 .content p {
     font-size: 16px;
     font-weight: 500;
