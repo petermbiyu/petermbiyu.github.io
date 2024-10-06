@@ -49,7 +49,7 @@ body {
 .home {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #040175;
     background-size: cover;
     background-position: center;
@@ -156,7 +156,7 @@ body {
 /* About */
 .about {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color:#040175;
 }
 .about-container {
@@ -214,7 +214,7 @@ body {
 /* Skills */ 
 .skills {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #040175;
 }
 .skills-container {
@@ -412,7 +412,7 @@ svg .progress-bar {
 /* Contact */
 .contact {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #040175;
 }
 .contact-container {
