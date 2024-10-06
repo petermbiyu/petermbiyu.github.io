@@ -165,7 +165,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
-    padding: 10% 20px 0 0;
+    padding: 10px 20px 0 0;
     
 }
 .about-img { 
@@ -223,7 +223,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
-    padding: 10% 20px 0 0;
+    padding: 10px 20px 0 0;
 }
 .my-skills {
     width: 50%;
@@ -424,7 +424,7 @@ svg .progress-bar {
 }
 .contact-text {
     width: 50%;
-    padding: 10% 20px 10px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
