@@ -219,6 +219,7 @@ body {
 }
 .skills-container {
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -227,7 +228,7 @@ body {
 }
 .my-skills {
     width: 50%;
-    padding:  30px;
+    padding: 30px;
 }
 .my-skills h2 {
     font-size: 30px;
@@ -238,11 +239,11 @@ body {
     text-decoration-thickness: 5px;
     text-decoration-color: #0ef;
     height: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .skill-bar {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
     position: relative;
 
 }
@@ -341,13 +342,13 @@ body {
 }
 .radial-bar {
     width: 50%;
-    height: 170px;
+    height: 150px;
     position: relative;
     
 }
 .radial-bar svg {
     width: 120px;
-    height: 160px;
+    height: 130px;
     position: absolute;
     top: 50%;
     left: 50%;
