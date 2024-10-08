@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,12 @@
     <meta name="description" content="a description of my web design skills in front-end development">
     <title>personal portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <script src="https://kit.fontawesome.com/ad5b6e87a8.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 </head>
+
 <body>
     <section class="header">
         <a href="#" class="logo">Mr. Mbiyu</a>
@@ -17,7 +21,7 @@
             <a href="#home" style="--i:1">Home</a>
             <a href="#about" style="--i:2">About</a>
             <a href="#skills" style="--i:3">Skills</a>
-            <a href="#" style="--i:4">Projects</a>
+            <a href="#projects" style="--i:4">Projects</a>
             <a href="#contact" style="--i:5">Contact</a>
         </div>
     </section>
@@ -27,7 +31,8 @@
                 <h3>Hello, It's me</h3>
                 <h1>Peter Mbiyu Muigai</h1>
                 <h3>And I'm a <span class="text"></span></h3>
-                <p>As a web designer, I focuse on the creation of complex and exciting UI/UX. My goal is to create and design simple and amazing design, and many more</p>
+                <p>As a web designer, I focuse on the creation of complex and exciting UI/UX. My goal is to create and
+                    design simple and amazing design, and many more</p>
                 <div class="home-socials">
                     <a href="#" style="--i:6"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#" style="--i:7"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -37,10 +42,10 @@
                 </div>
                 <a href="#" class="btn-box">More about me</a>
             </div>
-         <!--   <div class="home-img">
+            <!--   <div class="home-img">
                 <img src="img/PASSPORT1.jpg" alt="image">
             </div> -->
-        </div> 
+        </div>
     </section>
     <section class="about" id="about">
         <div class="about-container">
@@ -50,13 +55,13 @@
             <div class="about-text">
                 <h2>About <span>Me</span></h2>
                 <h3>Frontend Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae perferendis exercitationem 
-                    et fugit fuga magnam provident, officiis unde sint cumque, minus, laborum repudiandae similique 
-                    modi molestias doloribus. Minima itaque cumque deleniti asperiores? Culpa, eligendi quae! Ea 
-                    quo eius voluptatibus nam, ipsa illo, sed quia eaque tempora consequatur suscipit, perspiciatis 
-                    doloremque veniam animi perferendis voluptates impedit saepe unde quae praesentium in minima 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae perferendis exercitationem
+                    et fugit fuga magnam provident, officiis unde sint cumque, minus, laborum repudiandae similique
+                    modi molestias doloribus. Minima itaque cumque deleniti asperiores? Culpa, eligendi quae! Ea
+                    quo eius voluptatibus nam, ipsa illo, sed quia eaque tempora consequatur suscipit, perspiciatis
+                    doloremque veniam animi perferendis voluptates impedit saepe unde quae praesentium in minima
                     quod explicabo cupiditate? </p>
-                    <a href="#" class="btn-box">More about me</a>
+                <a href="#" class="btn-box">More about me</a>
             </div>
         </div>
     </section>
@@ -131,15 +136,66 @@
             </div>
         </div>
     </section>
+    <section class="projects" id="projects">
+        <div class="project-container">
+            <div class="project-items">
+                <h2>My <span>Projects</span></h2>
+                <div class="project-list" id="item-list">
+                    <div class="project-item">
+                        <div class="img">
+                            <img src="img/project01.jpg" alt="projects">
+                        </div>
+                        <h3>Counter</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="project-item">
+                        <div class="img">
+                            <img src="img/project02.jpg" alt="projects">
+                        </div>
+                        <h3>DBackground Button</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  <div class="project-item">
+                        <div class="img">
+                            <img src="img/project03.jpg" alt="projects" width="100%">
+                        </div>
+                        <h3>Grocery List</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="project-item">
+                        <div class="img">
+                            <img src="img/project04.jpg" alt="projects" width="100%">
+                        </div>
+                        <h3>Image Courosel</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="project-item">
+                        <div class="img">
+                            <img src="img/project03.jpg" alt="projects" width="100%">
+                        </div>
+                        <h3>Js Projects</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <span id="btn-lft"><i class="fa-solid fa-chevron-left" ></i></span>
+                <span id="btn-rgt"><i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+        </div>
+    </section>
     <section class="contact" id="contact">
         <div class="contact-container">
             <div class="contact-text">
                 <h2>Contact <span>Me</span></h2>
                 <div class="con-text">
                     <h3>Let Work Together</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos asperiores cupiditate beatae tempore 
-                        pariatur nisi ipsam dolorem, omnis corporis ab qui id unde praesentium, officia earum! At alias 
-                        iste mollitia, laboriosam veniam eaque nisi beatae assumenda explicabo, consectetur cumque 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos asperiores cupiditate beatae tempore
+                        pariatur nisi ipsam dolorem, omnis corporis ab qui id unde praesentium, officia earum! At alias
+                        iste mollitia, laboriosam veniam eaque nisi beatae assumenda explicabo, consectetur cumque
                         inventore?</p>
                     <span><i class="fa-solid fa-phone"></i>0104 690 059</span>
                     <span><i class="fa-solid fa-envelope"></i>petersmasha@gmail.com</span>
@@ -166,10 +222,11 @@
 
     <section class="footer">
         <span class="footer-text">Copyright 2024 &copy: A Peter Mbiyu Work</span>
-        <a href="#home" id="scroll"><i class="fa-solid fa-arrow-up" ></i></a>
+        <a href="#home" id="scroll"><i class="fa-solid fa-arrow-up"></i></a>
     </section>
-    
+
 
     <script src="script.js"></script>
 </body>
+
 </html>
