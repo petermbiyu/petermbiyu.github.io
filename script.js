@@ -1,3 +1,17 @@
+/* nav hide/show */
+var prePosition = window.scrollY;
+window.onscroll = () => {
+    var currPosition = window.scrollY;
+    if(prePosition > currPosition) {
+        document.getElementById("header").style.top = "0";
+    } else {
+        document.getElementById("header").style.top = "20";
+    }
+
+    currPosition = prePosition;
+}
+
+
 let typed = new Typed (".text", {
     strings: ["frontend developer", "web designer", "teacher"],
     typeSpeed: 100,
