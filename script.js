@@ -20,43 +20,35 @@ let typed = new Typed (".text", {
     backDelay: 1000
 });
 
-/* let slider = tns({
-    container: ".project-list",
-    "slideBy": "1",
-    "speed" : 400,
-    "nav" : false,
-    autoplay: true,
-    controls : false,
-    autoplayButtonOutput : false,
-    responsive : {
+const swiper = new Swiper('.project-wrapper', {
+    loop: true,
+    spaceBetween : 20,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints : {
         1650 : {
-            items : 4,
-            gutter : 20
+            slidesPerView : 4
         },
         1024 : {
-            items : 3,
-            gutter : 20
+            slidesPerView : 3
         },
-        768 : {
-            items : 2,
-            gutter : 20
+        780 : {
+            slidesPerView : 2
         },
-        480 : {
-            items : 1
-        }
+        420 : {
+            slidesPerView : 1
+        },
+        
     }
-}); */
 
-/* scroll */
-const prev = document.getElementById("btn-lft");
-const next = document.getElementById("btn-rgt");
-const itemList = document.getElementById("item-list");
-const itemWidth = 350;
-const gap = 20;
+  }); 
 
-prev.addEventListener("click", () => {
-    itemList.scrollLeft -= (itemWidth + gap)
-});
-next.addEventListener("click", () => {
-    itemList.scrollLeft += (itemWidth + gap)
-});

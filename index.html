@@ -8,11 +8,10 @@
     <meta name="description" content="a description of my web design skills in front-end development">
     <title>personal portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://kit.fontawesome.com/ad5b6e87a8.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-</head>
+    
 
 <body>
     <section class="header" id="header">
@@ -137,56 +136,111 @@
         </div>
     </section>
     <section class="projects" id="projects">
-        <div class="project-container">
-            <div class="project-items">
+        <div class="project-container swiper">
+            <div class="project-wrapper">
                 <h2>My <span>Projects</span></h2>
-                <div class="project-list" id="item-list">
-                    <div class="project-item">
-                        <div class="img">
-                            <img src="img/project01.jpg" alt="projects">
-                        </div>
-                        <h3>Counter</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span class="item-btn"><i class="fa-solid fa-arrow-right"></i></span>
-                    </div>
-                    <div class="project-item">
-                        <div class="img">
-                            <img src="img/project02.jpg" alt="projects">
-                        </div>
-                        <h3>DBackground Button</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span class="item-btn"><i class="fa-solid fa-arrow-right"></i></span>
-                    </div>
-                  <div class="project-item">
-                        <div class="img">
-                            <img src="img/project03.jpg" alt="projects" width="100%">
-                        </div>
-                        <h3>Grocery List</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span class="item-btn"><i class="fa-solid fa-arrow-right"></i></span>
-                    </div>
-                    <div class="project-item">
-                        <div class="img">
-                            <img src="img/project04.jpg" alt="projects" width="100%">
-                        </div>
-                        <h3>Image Courosel</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span class="item-btn"><i class="fa-solid fa-arrow-right"></i></span>
-                    </div>
-                    <div class="project-item">
-                        <div class="img">
-                            <img src="img/project03.jpg" alt="projects" width="100%">
-                        </div>
-                        <h3>Js Projects</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span class="item-btn"><i class="fa-solid fa-arrow-right"></i></span>
-                    </div>
-                </div>
-                <span id="btn-lft"><i class="fa-solid fa-chevron-left" ></i></span>
-                <span id="btn-rgt"><i class="fa-solid fa-chevron-right"></i></span>
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-items swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="img/project01.jpg" alt="img" class="card-image">
+                            <p>Developer</p>
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, officiis?</h3>
+                            <span class="card-btn"><i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="card-items swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="img/project02.jpg" alt="img" class="card-image">
+                            <p>Designer</p>
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, officiis?</h3>
+                            <span class="card-btn"><i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="card-items swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="img/project03.jpg" alt="img" class="card-image">
+                            <p>Teacher</p>
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, officiis?</h3>
+                            <span class="card-btn"><i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="card-items swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="img/project04.jpg" alt="img" class="card-image">
+                            <p>Tutor</p>
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, officiis?</h3>
+                            <span class="card-btn"><i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="card-items swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="img/project05.jpg" alt="img" class="card-image">
+                            <p>Parent</p>
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, officiis?</h3>
+                            <span class="card-btn"><i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
+
         </div>
     </section>
+    <!-- <section class="projects swiper" id="projects">
+        <div class="project-container ">
+            <div class="project-items">
+                <h2>My <span>Projects</span></h2>
+                <div class="project-list swiper-wrapper">
+                    <div class="project-item swiper-slide">
+                        <div class="item-container">
+                            <img src="img/project01.jpg" alt="projects">
+                            <h3>Counter</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <span class="item-btn"><i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-item swiper-slide">
+                        <div class="item-container">
+                            <img src="img/project02.jpg" alt="projects">
+                            <h3>DBackground Button</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <span class="item-btn"><i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-item swiper-slide">
+                        <div class="item-container">
+                            <img src="img/project03.jpg" alt="projects" >
+                            <h3>Grocery List</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <span class="item-btn"><i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-item swiper-slide">
+                        <div class="item-container">
+                            <img src="img/project04.jpg" alt="projects" >
+                            <h3>Image Courosel</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <span class="item-btn"><i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-item swiper-slide">
+                        <div class="item-container">
+                            <img src="img/project03.jpg" alt="projects" >
+                            <h3>Js Projects</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <span class="item-btn"><i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section> -->
     <section class="contact" id="contact">
         <div class="contact-container">
             <div class="contact-text">
@@ -226,6 +280,7 @@
     </section>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
