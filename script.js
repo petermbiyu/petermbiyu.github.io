@@ -1,15 +1,3 @@
-/* nav hide/show */
-var prePosition = window.scrollY;
-window.onscroll = () => {
-    var currPosition = window.scrollY;
-    if(prePosition > currPosition) {
-        document.getElementById("header").style.top = "0";
-    } else {
-        document.getElementById("header").style.top = "20";
-    }
-
-    currPosition = prePosition;
-}
 
 
 let typed = new Typed (".text", {
@@ -20,35 +8,26 @@ let typed = new Typed (".text", {
     backDelay: 1000
 });
 
-const swiper = new Swiper('.project-wrapper', {
-    loop: true,
-    spaceBetween : 20,
+var splide = new Splide( '.splide', {
+    type   : 'loop',
+    perPage: 3,
+    gap    : '2rem',
+    focus  : "center",
+    drag   : 'free',
+    autoWidth: true,
+    breakpoints: {
+      640: {
+        perPage: 2,
+        gap    : '.7rem',
+      },
+      480: {
+        perPage: 1,
+        gap    : '.7rem',
   
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
+      },
     },
+   
+  } );
   
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints : {
-        1650 : {
-            slidesPerView : 4
-        },
-        1024 : {
-            slidesPerView : 3
-        },
-        780 : {
-            slidesPerView : 2
-        },
-        420 : {
-            slidesPerView : 1
-        },
-        
-    }
-
-  }); 
+  splide.mount();
 

@@ -469,16 +469,147 @@ svg .progress-bar {
 
 .project-container {
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-.card-list {
-    padding: 0px 10px;
+
+.pro-header {
+    margin-top: 10%;
+    width: 100%;
+    max-width: 1080px;
+    
 }
+.pro-header h2 {
+    font-size: 50px;
+    padding-bottom: 30px;
+    line-height: 30px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-align: center;
+    text-decoration-thickness: 5px;
+    text-decoration-color: #0ef;
+    height: 30px;
+    margin-bottom: 40px;
+}
+.pro-header p {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+
+.splide {
+    width: 100%;
+    max-width: 1080px;
+    height: 100%;
+}
+.splide__track {
+    width: 100%;
+    height: 100%;
+}
+.splide__list {
+    width: 100%;
+    height: 100%;
+}
+
+
+.card {
+    border-radius: 25px;
+    background-color: #ffff;
+    width: 320px;
+}
+.image-content {
+    row-gap: 5px;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #4070f4;
+    top: 0;
+    left: 0;
+    border-radius: 25px 25px 0px 25px;
+}
+.overlay:before, .overlay::after {
+    content: ""; 
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #4070f4;
+    right: 0;
+    bottom: -40px;
+    z-index: 100;
+}
+.overlay::after {
+    background-color: #fff;
+    border-radius: 0px 25px 0px 0px;
+}
+.card-image {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ffff;
+    padding: 3px;
+
+}
+
+.image-content, .card-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 14px;
+
+}
+.card-image .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070f4;
+}
+.name {
+    font-size: 18px;
+    font-weight: 500px;
+    color: #333;
+}
+.description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center ;
+}
+.button {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover {
+    background-color: #265d;
+}
+
+
+/* .project-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+}
+
+
 .card-list .card-items {
     list-style: none;
+    width: fit-content;
     
 }
 .card-list .card-items .card-link {
@@ -498,6 +629,7 @@ svg .progress-bar {
 
 .card-items .card-link .card-image {
     width: 100%;
+
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 10px;
@@ -536,7 +668,7 @@ svg .progress-bar {
 .card-list .card-items .card-link:hover .card-btn {
     background-color: #5372f0;
     color: #fff;
-}
+} */
 
 
 /* Contact */
