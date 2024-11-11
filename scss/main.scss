@@ -1,0 +1,21 @@
+@import 'config';
+@import 'menu';
+@import 'home';
+@import 'about';
+@import 'skills';
+@import 'projects';
+@import 'contact';
+@import 'response';
+
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    line-height: 1;
+    background: linear-gradient(to right, rgba($primary-color, 0.5), rgba($primary-color, 0.1)), url(/img/newback.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

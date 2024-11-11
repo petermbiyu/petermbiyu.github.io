@@ -1,0 +1,106 @@
+.projects {
+
+
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+
+
+
+
+
+    &-container {
+        width: 100%;
+        background: $primary-color;
+        padding: 1rem;
+
+
+        .projects-title {
+            text-align: center;
+            color: set-text-color($primary-color);
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .projects-list {
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            background: lighten($primary-color, 10%);
+            padding: 10px;
+            align-items: flex-start;
+            justify-content: space-evenly;
+
+            &-items {
+                width: 100%;
+                max-width: 300px;
+                margin: 5px;
+                border-bottom: 5px solid darken($secondary-color, 10%);
+                position: relative;
+                overflow: hidden;
+
+                .project-img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &-buttons {
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    font-size: 18px;
+                    font-weight: 500;
+                    display: flex;
+                    justify-content: space-evenly;
+                    z-index: 1;
+
+                    .preview,
+                    .github {
+                        text-decoration: none;
+                        visibility: hidden;
+                        color: $primary-color;
+                        @include transition-ease;
+
+                        i {
+                            margin-right: 10px;
+                        }
+                    }
+
+                }
+
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: -100%;
+                    left: 0;
+                    background: $secondary-color;
+                    opacity: 0;
+                    @include transition-ease;
+                }
+
+                &:hover {
+                    &::after {
+                        opacity: 0.7;
+                        top: 0;
+                    }
+
+                    .preview,
+                    .github {
+                        visibility: visible;
+
+                        &:hover {
+                            color: set-text-color($primary-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
