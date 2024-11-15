@@ -8,3 +8,4 @@ This is the first project where I integrate HTML, SCSS & JS in my design.
 
 I am also using this .md files in my git/github learning.
 currently confused about ssh generation.
+intentionally left the -m while running commit.
