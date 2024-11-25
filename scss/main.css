@@ -76,13 +76,14 @@ main {
 
 .menu-container {
   visibility: hidden;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  min-height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
   background-color: #272727;
   z-index: 100;
+  overflow: hidden;
 }
 .menu-container.open {
   visibility: visible;
