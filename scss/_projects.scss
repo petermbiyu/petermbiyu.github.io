@@ -24,6 +24,10 @@
             font-size: 3rem;
             font-weight: 600;
             margin-bottom: 2rem;
+
+            span {
+                color: lighten($secondary-color, 10%);
+            }
         }
 
         .projects-list {
