@@ -1,7 +1,7 @@
 @include media-sm {
     .home-container {
         margin: 10vh 1rem;
-        width: calc(100% - 1rem);
+        width: calc(100% - 0.5rem);
 
 
         h2 {
@@ -41,7 +41,8 @@
 
 @include media-sl {
     .home {
-        overflow-y: visible;
+        // overflow-y: visible;
+        padding: 0 0.5rem;
 
         &::-webkit-scrollbar {
             display: none;
@@ -50,6 +51,7 @@
         &-container {
             margin: 20vh 1rem;
             width: 100%;
+            padding: 0;
 
         }
     }
@@ -58,7 +60,8 @@
     .about {
         height: calc(100% - 130px);
         align-items: flex-end;
-        margin: 70px 0 50px;
+        padding: 0 0.5rem;
+        // margin: 70px 0 50px;
 
         &-bio {
             h2 {
@@ -93,7 +96,8 @@
     .projects {
         height: calc(100% - 130px);
         align-items: center;
-        margin: 70px auto 60px;
+        padding: 0 0.5rem;
+        // margin: 70px auto 60px;
 
 
 
@@ -109,7 +113,8 @@
     .skills {
         height: calc(100% - 130px);
         align-items: flex-end;
-        margin: 70px 0 50px;
+        padding: 0 0.5rem;
+        // margin: 70px 0 50px;
 
         &-container {
             padding: 0.5rem;
@@ -164,7 +169,8 @@
     .contact {
         height: calc(100% - 130px);
         align-items: flex-end;
-        margin: 70px 0 50px;
+        padding: 0 0.5rem;
+        // margin: 70px 0 50px;
 
         &-container {
             padding: 1rem;
@@ -209,6 +215,8 @@
 
 
 @include media-sg {
+
+
     .menu-badge {
         visibility: hidden;
     }
@@ -236,5 +244,7 @@
             }
         }
     }
+
+
 
 }

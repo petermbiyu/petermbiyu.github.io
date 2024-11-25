@@ -6,6 +6,24 @@
   font-family: "Poppins", serif;
 }
 
+body {
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.5), rgba(39, 39, 39, 0.1)), url(/img/newback.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main {
+  height: 100%;
+  margin: 70px 0 50px;
+  display: flex;
+  align-items: center;
+}
+
 .menu-logo {
   position: absolute;
   left: 2rem;
@@ -96,15 +114,19 @@
   color: #3a33ff;
 }
 
-.home {
-  width: calc(100% - 1rem);
+.main {
+  overflow-y: auto;
   height: 100vh;
-  overflow: hidden;
+  width: calc(100% - 1rem);
 }
+.main::-webkit-scrollbar {
+  display: none;
+}
+
 .home-container {
-  width: 60%;
-  margin: 20vh 1rem;
-  padding: 1rem;
+  width: 100%;
+  margin: 20vh 0 0 0;
+  padding: 0 2rem;
   color: #fff;
   text-shadow: 0px 0px 10px #6b66ff;
 }
@@ -165,7 +187,6 @@
   padding: 0 2rem;
   display: flex;
   align-items: center;
-  margin-top: 70px;
 }
 .about-bio {
   width: 100%;
@@ -229,7 +250,6 @@
   padding: 0 2rem;
   display: flex;
   align-items: center;
-  margin-top: 70PX;
 }
 .skills-container {
   width: 100%;
@@ -405,7 +425,6 @@
 .projects {
   width: 100%;
   height: 100%;
-  margin-top: 70px;
   padding: 0 2rem;
   display: flex;
   align-items: center;
@@ -437,6 +456,7 @@
 .projects-container .projects-list-items {
   width: 100%;
   max-width: 300px;
+  height: 230px;
   margin: 5px;
   border-bottom: 5px solid #0900ff;
   position: relative;
@@ -445,6 +465,7 @@
 .projects-container .projects-list-items .project-img {
   width: 100%;
   height: 100%;
+  aspect-ratio: 6/9;
 }
 .projects-container .projects-list-items-buttons {
   width: 100%;
@@ -497,13 +518,12 @@
   height: 100%;
   padding: 0 2rem;
   display: flex;
-  margin-top: 70PX;
+  align-items: center;
 }
 .contact-container {
   width: 100%;
   background: #272727;
   padding: 1rem;
-  align-self: center;
 }
 .contact-container .contact-title {
   text-align: center;
@@ -554,7 +574,7 @@
 @media screen and (max-width: 480px) {
   .home-container {
     margin: 10vh 1rem;
-    width: calc(100% - 1rem);
+    width: calc(100% - 0.5rem);
   }
   .home-container h2 {
     font-size: 1.5rem;
@@ -584,7 +604,7 @@
 }
 @media screen and (max-width: 780px) {
   .home {
-    overflow-y: visible;
+    padding: 0 0.5rem;
   }
   .home::-webkit-scrollbar {
     display: none;
@@ -592,11 +612,12 @@
   .home-container {
     margin: 20vh 1rem;
     width: 100%;
+    padding: 0;
   }
   .about {
     height: calc(100% - 130px);
     align-items: flex-end;
-    margin: 70px 0 50px;
+    padding: 0 0.5rem;
   }
   .about-bio h2 {
     font-size: 2.5rem;
@@ -621,7 +642,7 @@
   .projects {
     height: calc(100% - 130px);
     align-items: center;
-    margin: 70px auto 60px;
+    padding: 0 0.5rem;
   }
   .projects-container .projects-title {
     font-size: 2.25rem;
@@ -630,7 +651,7 @@
   .skills {
     height: calc(100% - 130px);
     align-items: flex-end;
-    margin: 70px 0 50px;
+    padding: 0 0.5rem;
   }
   .skills-container {
     padding: 0.5rem;
@@ -670,7 +691,7 @@
   .contact {
     height: calc(100% - 130px);
     align-items: flex-end;
-    margin: 70px 0 50px;
+    padding: 0 0.5rem;
   }
   .contact-container {
     padding: 1rem;
@@ -726,14 +747,4 @@
     text-transform: capitalize;
     font-weight: 400;
   }
-}
-body {
-  width: 100vw;
-  height: 100vh;
-  line-height: 1;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.5), rgba(39, 39, 39, 0.1)), url(/img/newback.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }/*# sourceMappingURL=main.css.map */
