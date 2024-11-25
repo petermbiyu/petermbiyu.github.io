@@ -161,10 +161,11 @@
 
 .about {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 0 2rem;
   display: flex;
   align-items: center;
+  margin-top: 70px;
 }
 .about-bio {
   width: 100%;
@@ -193,7 +194,7 @@
   padding: 20px 10px;
   background: #414141;
   width: 33%;
-  min-height: 300px;
+  align-self: stretch;
 }
 .about-bio-items-list h3 {
   font-size: 1.75rem;
@@ -224,10 +225,11 @@
 
 .skills {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 0 2rem;
   display: flex;
   align-items: center;
+  margin-top: 70PX;
 }
 .skills-container {
   width: 100%;
@@ -495,6 +497,7 @@
   width: 100%;
   background: #272727;
   padding: 1rem;
+  margin-top: 70PX;
 }
 .contact-container .contact-title {
   text-align: center;
