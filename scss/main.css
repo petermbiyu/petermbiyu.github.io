@@ -151,7 +151,10 @@ main {
   font-size: 1rem;
   font-weight: 500;
   width: 100%;
-  max-width: 740px;
+  padding: 10px;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  max-width: 869px;
   margin-top: 30px;
 }
 .home-social {
