@@ -243,6 +243,9 @@
   font-weight: 600;
   margin-bottom: 2rem;
 }
+.skills-container .skills-title span {
+  color: #6b66ff;
+}
 .skills-container .skills-items {
   width: 100%;
   display: flex;
@@ -419,6 +422,9 @@
   font-weight: 600;
   margin-bottom: 2rem;
 }
+.projects-container .projects-title span {
+  color: #6b66ff;
+}
 .projects-container .projects-list {
   width: 100%;
   display: flex;
@@ -505,6 +511,9 @@
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 2rem;
+}
+.contact-container .contact-title span {
+  color: #6b66ff;
 }
 .contact-container .contact-list {
   width: 100%;
