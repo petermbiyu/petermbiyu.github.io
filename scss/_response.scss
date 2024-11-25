@@ -58,8 +58,9 @@
 
     // about page responsiveness
     .about {
-        height: calc(100% - 130px);
-        align-items: flex-end;
+
+        // height: calc(100vh - 130px);
+        align-items: flex-start;
         padding: 0 0.5rem;
         // margin: 70px 0 50px;
 
@@ -95,7 +96,7 @@
     //project page responsiveness
     .projects {
         height: calc(100% - 130px);
-        align-items: center;
+        align-items: flex-start;
         padding: 0 0.5rem;
         // margin: 70px auto 60px;
 
@@ -112,7 +113,7 @@
     //skills page responsiveness 
     .skills {
         height: calc(100% - 130px);
-        align-items: flex-end;
+        align-items: flex-start;
         padding: 0 0.5rem;
         // margin: 70px 0 50px;
 
@@ -168,7 +169,7 @@
 
     .contact {
         height: calc(100% - 130px);
-        align-items: flex-end;
+        align-items: flex-start;
         padding: 0 0.5rem;
         // margin: 70px 0 50px;
 
