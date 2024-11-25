@@ -1,16 +1,19 @@
 .contact {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 0 2rem;
     display: flex;
-    align-items: center;
+    // align-items: center;
+    margin-top: 70PX;
+
 
 
     &-container {
         width: 100%;
         background: $primary-color;
         padding: 1rem;
-        margin-top: 70PX;
+        align-self: center;
+
 
         .contact-title {
             text-align: center;
