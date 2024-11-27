@@ -41,7 +41,7 @@ main {
   width: 30px;
   height: 35px;
   cursor: pointer;
-  z-index: 4;
+  z-index: 2;
 }
 .menu-badge-item {
   width: 30px;
@@ -81,7 +81,7 @@ main {
   top: 0;
   left: 0;
   background-color: #272727;
-  z-index: 3;
+  z-index: 1;
   overflow: hidden;
 }
 .menu-container.open {
@@ -96,7 +96,6 @@ main {
   flex-flow: column nowrap;
   width: 100vw;
   height: 100vh;
-  border: 2px solid green;
 }
 .menu-container .menuItem-list {
   padding: 2rem;
@@ -175,7 +174,6 @@ main {
   margin-right: 20px;
   text-decoration: none;
   color: #3a33ff;
-  z-index: 1;
   transition: all 0.4s ease;
 }
 .home-social-item i {
