@@ -151,19 +151,21 @@
 
                 .skills-circular-list {
                     width: 100%;
+                    align-self: stretch;
                     display: grid;
                     grid-template-columns: auto auto;
                     margin-top: 1rem;
                     place-content: center;
-                    column-gap: 3rem;
+                    gap: 1rem 3rem;
 
                     &-items {
 
 
-                        width: 150px;
-                        height: 130px;
+                        max-width: 30vw;
+                        max-height: 30vh;
                         position: relative;
-                        margin-left: 20px;
+
+
 
                         .bars {
                             width: 100px;
