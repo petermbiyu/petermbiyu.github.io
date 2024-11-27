@@ -41,7 +41,7 @@ main {
   width: 30px;
   height: 35px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 6;
 }
 .menu-badge-item {
   width: 30px;
@@ -77,11 +77,11 @@ main {
   visibility: hidden;
   width: 100%;
   min-height: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   background-color: #272727;
-  z-index: 1;
+  z-index: 5;
   overflow: hidden;
 }
 .menu-container.open {
@@ -172,6 +172,7 @@ main {
   height: 50px;
   border-radius: 50%;
   margin-right: 20px;
+  z-index: 4;
   text-decoration: none;
   color: #3a33ff;
   transition: all 0.4s ease;
@@ -456,13 +457,13 @@ main {
   padding: 10px;
   align-items: flex-start;
   justify-content: space-evenly;
-  z-index: 1;
 }
 .projects-container .projects-list-items {
   width: 100%;
   max-width: 300px;
   height: 230px;
   margin: 5px;
+  z-index: 3;
   border-bottom: 5px solid #0900ff;
   position: relative;
   overflow: hidden;
@@ -482,8 +483,8 @@ main {
   font-size: 18px;
   font-weight: 500;
   display: flex;
+  z-index: 4;
   justify-content: space-evenly;
-  z-index: 2;
 }
 .projects-container .projects-list-items-buttons .preview,
 .projects-container .projects-list-items-buttons .github {
@@ -736,7 +737,7 @@ main {
   }
   .menu-container {
     visibility: visible;
-    height: 60px;
+    min-height: 60px;
     background-color: transparent;
   }
   .menu-container .menuItem {

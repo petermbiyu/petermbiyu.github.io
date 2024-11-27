@@ -224,7 +224,7 @@
 
     .menu-container {
         visibility: visible;
-        height: 60px;
+        min-height: 60px;
         background-color: transparent;
 
         .menuItem {
