@@ -239,6 +239,7 @@ main {
   position: fixed;
   bottom: 0;
   background-color: #272727;
+  z-index: 4;
 }
 .footer-content {
   text-align: center;
