@@ -16,7 +16,7 @@
     width: 30px;
     height: 35px;
     cursor: pointer;
-    z-index: 101;
+    z-index: 4;
 
     &-item {
         width: 30px;
@@ -49,7 +49,7 @@
 
         &.open {
             background: transparent;
-            transform: rotate(720deg);
+            // transform: rotate(720deg);
         }
 
 
@@ -58,13 +58,13 @@
 
 .menu-container {
     visibility: hidden;
-    width: 100vw;
-    min-height: 100vh;
-    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: $primary-color;
-    z-index: 100;
+    z-index: 3;
     overflow: hidden;
 
     &.open {
@@ -78,8 +78,9 @@
         align-items: center;
         justify-content: center;
         flex-flow: column nowrap;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
+        border: 2px solid green;
 
 
         &-list {

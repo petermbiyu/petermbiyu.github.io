@@ -13,6 +13,7 @@
 
 
 
+
         .projects-title {
             text-align: center;
             color: set-text-color($primary-color);
@@ -20,10 +21,13 @@
             font-weight: 600;
             margin-bottom: 2rem;
 
+
             span {
                 color: lighten($secondary-color, 10%);
             }
         }
+
+
 
         .projects-list {
             width: 100%;
@@ -33,6 +37,8 @@
             padding: 10px;
             align-items: flex-start;
             justify-content: space-evenly;
+            z-index: 1;
+
 
 
             &-items {
@@ -43,11 +49,14 @@
                 border-bottom: 5px solid darken($secondary-color, 10%);
                 position: relative;
                 overflow: hidden;
+                cursor: pointer;
+
 
                 .project-img {
                     width: 100%;
                     height: 100%;
                     aspect-ratio: 6 / 9;
+                    cursor: pointer;
                 }
 
                 &-buttons {
@@ -59,7 +68,8 @@
                     font-weight: 500;
                     display: flex;
                     justify-content: space-evenly;
-                    z-index: 1;
+                    z-index: 2;
+
 
                     .preview,
                     .github {

@@ -41,7 +41,7 @@ main {
   width: 30px;
   height: 35px;
   cursor: pointer;
-  z-index: 101;
+  z-index: 4;
 }
 .menu-badge-item {
   width: 30px;
@@ -71,18 +71,17 @@ main {
 }
 .menu-badge-item.open {
   background: transparent;
-  transform: rotate(720deg);
 }
 
 .menu-container {
   visibility: hidden;
-  width: 100vw;
-  min-height: 100vh;
-  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: #272727;
-  z-index: 100;
+  z-index: 3;
   overflow: hidden;
 }
 .menu-container.open {
@@ -95,8 +94,9 @@ main {
   align-items: center;
   justify-content: center;
   flex-flow: column nowrap;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  border: 2px solid green;
 }
 .menu-container .menuItem-list {
   padding: 2rem;
@@ -175,6 +175,7 @@ main {
   margin-right: 20px;
   text-decoration: none;
   color: #3a33ff;
+  z-index: 1;
   transition: all 0.4s ease;
 }
 .home-social-item i {
@@ -457,6 +458,7 @@ main {
   padding: 10px;
   align-items: flex-start;
   justify-content: space-evenly;
+  z-index: 1;
 }
 .projects-container .projects-list-items {
   width: 100%;
@@ -466,11 +468,13 @@ main {
   border-bottom: 5px solid #0900ff;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .projects-container .projects-list-items .project-img {
   width: 100%;
   height: 100%;
   aspect-ratio: 6/9;
+  cursor: pointer;
 }
 .projects-container .projects-list-items-buttons {
   width: 100%;
@@ -481,7 +485,7 @@ main {
   font-weight: 500;
   display: flex;
   justify-content: space-evenly;
-  z-index: 1;
+  z-index: 2;
 }
 .projects-container .projects-list-items-buttons .preview,
 .projects-container .projects-list-items-buttons .github {
